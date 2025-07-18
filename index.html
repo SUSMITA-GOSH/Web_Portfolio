@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Susmita | Portfolio</title>
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <div class="page-border">
+
+    <!-- ========== Header ========== -->
+    <header>
+      <div class="logo">Susmita</div>
+
+      <nav>
+        <a href="#home" class="active"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#works"><i class="fas fa-briefcase"></i> Projects</a>
+        <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+        <a href="#experience"><i class="fas fa-building"></i> Experience</a>
+      </nav>
+
+      <div class="contact-info">
+        <i class="fas fa-phone"></i> +001 (313) 345 678
+      </div>
+    </header>
+
+    <!-- ========== Hero ==========- -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hey There,<br>I'm Susmita</h1>
+        <p class="email"><i class="fas fa-envelope"></i> susmitagosh001@gmail.com</p>
+        <button class="cta-button" onclick="document.querySelector('#works').scrollIntoView({behavior:'smooth'})">
+          View My Work
+        </button>
+      </div>
+
+      <div class="hero-image">
+        <img src="susmita.jpeg" alt="Susmita's Photo">
+      </div>
+    </section>
+
+    <!-- ========== About ========== -->
+    <section id="about">
+      <h2>About&nbsp;Me</h2>
+      <p>
+        I'm <strong>Susmita Rani Gosh</strong>, a passionate Computer Science &amp; Engineering student at
+        <strong>Shahjalal University of Science and Technology (SUST)</strong>. I enjoy building creative web pages
+        and continuously learning new technologies.
+      </p>
+      <p>
+        Currently exploring front‑end development with HTML, CSS and JavaScript, I love turning ideas into beautiful,
+        functional websites. When I'm not coding, you’ll find me learning new skills, working on university projects
+        or planning something fun with friends.
+      </p>
+    </section>
+
+    <!-- ========== Skills ========== -->
+    <section id="skills">
+      <h2>My&nbsp;Skills</h2>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span class="skill-name"><i class="fab fa-cuttlefish"></i> C/C++</span>
+          <span class="skill-percent">35%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-progress cpp-progress"></div></div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span class="skill-name"><i class="fab fa-html5"></i> HTML/CSS</span>
+          <span class="skill-percent">55%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-progress html-progress"></div></div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span class="skill-name"><i class="fab fa-js-square"></i> JavaScript</span>
+          <span class="skill-percent">15%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-progress js-progress"></div></div>
+      </div>
+
+      <div class="skill-item">
+        <div class="skill-info">
+          <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+          <span class="skill-percent">20%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-progress py-progress"></div></div>
+      </div>
+    </section>
+
+    <!-- ========== Projects ========== -->
+    <section id="works">
+      <div class="projects-header">
+        <h2>My&nbsp;recent</h2><h2>works</h2>
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="games">Games</button>
+        <button class="filter-button" data-filter="web">Web</button>
+        <button class="filter-button" data-filter="design">Design</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Pacman -->
+        <div class="project-card" data-type="games">
+          <img src="https://www.google.com/logos/2010/pacman10-hp.png" alt="Pacman project" class="project-image">
+          <div class="project-info">
+            <h3>Pacman&nbsp;Game</h3>
+            <p>A classic Pacman clone with simple AI and scoring.</p>
+            <a href="https://github.com/SUSMITA-GOSH/pacman" class="project-link" target="_blank">
+              View&nbsp;Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Games Collection -->
+        <div class="project-card" data-type="games">
+          <img src="data:image/png;base64,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" alt="Games Collection" class="project-image">
+          <div class="project-info">
+            <h3>Games&nbsp;Collection</h3>
+            <p>A bundle of lightweight interactive games built with Python.</p>
+            <a href="https://github.com/SUSMITA-GOSH/Game" class="project-link" target="_blank">
+              View&nbsp;Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Web App -->
+        <div class="project-card" data-type="web">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAvVBMVEX///8AAADz9fs7mNOmpqZ6ens9nNm5ubkNDQ2srKzb3eI+Pj6pqamAgIB9fX6Hh4fl5eXMzMwhVnhCQkRHR0cxMjNycnPs7OwTMEIWFhbs7vNPT082i8IDCArz8/NtbW0iIiIgUnLAwMBlZWUbRmEhISErKyvY2NgJGCExfq9OTk40hrqRkZFXV1cQKTkWOU8qbJYHERjS0tINIC0lYIVeXl43NzctdKGOj5IZQVqZmp4UNEkpaJALHCchVXaYtvOdAAAM2ElEQVR4nO2dZ1/yPBSHKUhBVIYyFdmgiDhx6/P9P9bTnKRtmkWALrjzf+EPO3ORk5N1EjIZIyMjIyMjIyMjIyMjIyOjf0s3hcR0EwffkZWkOkeRAy4TBXT0FjFgP2lAyypHCniTNB5SpIWxgt5wOzxPSMNn9P77KAlP0BvmdmKao/f3oyRsOC+47uYSUxcRLg2hIUw9YUg14s1Rfnl3xWhZTANhh03W1d2yfFTdjG9Ul1dHFKHj3USfbDZhu7rQIKFEd7UNAJUtF5/QXrUn+B/7qf24gITY85+fOYPoHGvvoqEWoWU1tQEVGUgT2ivnvwdEY3+gE3BwgT4xdqxOl4aGtt6T6pqAb+rH+IQPLo09QZ9Q1tm/6NNvIBPtp10JLU1Ca6wFeIwvztdKvGYBwqHz3zPkIXBhg3RZKS12BXwMENYFCRs18ZUFHULkL61pKZPlxdYWj9YzgXFgP/Anx3RXbDn83Q3wwXsjEF4JUpbNvEC6GxqABXhoSfQUjtD3c6JPucB14flSIWE2W4KEazhUyO5vUQ7yhLFLRZj5RCfP1hN25FmYbkKciRruFF02kzwj3YSXU+RA9AgbYiNNOyFKXdEQahHu6hq3V0yEiQ3TnJ8PYyFMXIbQEKJn/OOExVEtMRXiIWytf0hUahlCQ4i0H4TM8cMjLH2Wm81mvz8ev70tl1dvLwdGmClxNUjpwAg/OcLvAyPkxzvHmcMi5Ns5jRTmYaGx3GxCvpchhMtL9PdhPl8gdbvPpCACYSezNnkxEdbQk3r611frlvONYMIR+jvxhi9hwH3kEnaswZpvLiZCGLTUz8TqFPwJEL5B0JI3c4DHmysZTGitf248hD1IiXYetjo46QM0sH0BM0f+zAFMGjQK2azf81EixkMIhqY9mdsq8r6FGg8jRz5n/tmXxAnBSE91AQXd0lt/qN/+4U+rRvfjIYRUaE5M997h6vYtTXBOEQZm79pf6xBjIQQjvdIExMbXttEEF9FrYIbS/mh7Z1Y29q0KxFgI+/pG6uYgIpm/oo/XwwU7vWV3V3DqAU21u4ijJAk72kbaq3uATtpz59d/qy43ewenntqvqxyOJRgqEeMgRNW99a51KQZ8zbnVey4n4mNOqRHjIARPqhXtiwH/JFBS2ecYUZjUGAh7A+nbGUEbxnoQ2qUaEeeisOaPgRCMVC8yBNI52RgwZ0Od0RE2mmIgPNM20sw9IH5sikiqyGPhM8Ml7PWtBmcqRc+TvszWxcNeQFI3zcLuNbpLEsQYKmELBRXPmINgpHfey+rK9jeOLP8SVhBspIZ/ZiL3M+ESVnGXgDkKRvoNXwCcbigrxm+45onlsO3F7+Sn3f5azTlGHLYkLQchEpLIfrZ1ZvnVPekNKDs7UGE8MAy51bXlacj4WtwUlzYKwyMc4fefMNeDkZ7gzy3cJFPG+UAU2muQkA2yGgbaAdiR5iMnPMUvX7LFzDdSR70rfJUiHg26TlRXwoF5tFj90aF0xEpl6QyLEPt5QS935hspEhkZlC6iwKZO51D31hIogNimv8WICPP4vRXuxAs6POWvFIdr9Wqw0GpIJd8FnH2OSpel2vcFj4jjXTv3x1WRnw6HcIzfKnBnFS7HSG5zFePNcd6N5V1Q+YNNtHOaJYnMjHBhDsT5/LlZe1fmyngohHV56WoEjRSJRLQGK2ioSonoIQvsZN4v6STi4FKq0nQ7F8JUhEDYIpWAyENCsWI7TsTrNmibKlNppANW4cAFk648a6d00O5J6IQ3eGSsI6zl7jkjRXoht1B5O/ZSeD2hbHQF112yCQOjeaRL4sOzez/bptqZsIafOxC3VGBkl2evDvBd/iggJnydrBZ0fW5DATvl0ofn26iSaNvdxcfwMQpCYnHv4tam0EiRyHiT3y2HoZxFjml3gvUVBSmDL+SXadvYOZSRbEDmjoRkmbBsbZLYSEFk/a07PtVnMoXyM5+C5MEXyzfQEWEnVELi+aUtpoHYSH0mj19M6M7CcCqhduozR3gbNuFxIJG8wEgHsrMVfHfBJ1ywhFCwWD8DglpISMhOKe5EiC2Nb8i4ulefxk4fL+5pygmFSTuRErK9t50I7+lcEOhEYaTuQgjSEFIQCvPwXUj4FzYh6y4YgZFK56GJkyIre/JCQiiHNUHSLjsiQjt8wkxTVRKVRkpKobsADQi5VXBQ4X8Lkga18E8chGxCA1IZ6Zj5aqDVtuDW+UmShy9fsfVhJISKGrGKjrMtDKIlXQaRoKM8eVp0g3U+tMVGvJFajFE7N3WfhrC6LnRC12HwY2gwqCTsB7ZIZ4SaaDjDR6zr9mTOdhpOuIRB4aAGc+z5o99PDp3QbZk22AuhYSaaf25N8R30uYrlixoRxisQ88EEknr4ib0sMkJsjlyRkxopGZPrBNrqNSqJbSoT/4MjzUCycMFoU1l4Tt3NjnyHQejNvAd6iGCkgp1JJGNyhaUfeUC33mAq1LrzFkhmSsR/027pgdw4G39zni0UQndiM1D3n3DMINLSu+M7I73q6H4MPUfKSdpu53Y8unSuuayVSaAGZaPY5RYrhQjHabwxNH/AqyoqE+6YtjzyBHL4masxsF0Ppt5nuqbADQNZxRsWoVv3e+85EhopcZmKhZGQRXTPz1543XdfgWF/nM2y1mFohG4j1a37r0RG2mdzmhd8M4FRfbs7YfjagaYBrlKk67rDI3RHvXFnUWikpCEjnucjgnLKLAl0qjuK7/UjOLmPjZQdgIqC0PWS8FlkpDi6Tb06Gc9Psb132+4+ff09X1/f/qz42JO50vLDJMQD3JjwTsSCjnVUMWhuNgtWdcLUoWT+cKj65kIlzNzMSI0BWTFlnbdjgTN1WA1uAv4KMJSCFrdkTXC4hA4jpjqlnY6v3poQ0x50+x42nsefUx4gakIiSXW/Tk2Zja5DPJdXGNEQgpGKgz+UgnQ+bpqFbldZ7KSjIQSXv8U2ZNjZbhxQ4+7EISzj0RBCdS8LFlSoxiIKfSd7ygUUj4hFQihpk2poFEC0F8MJH3uB8RaTn18Sm6gEjIZwWyPNBHMRJ739kePqeHsO0Qk4vpTEDMtaSpEQvim+Uk3EL6cZ4wZ03w4Dg3Bu/CzSf7YLKA0ri4KwtbWRIr0QxEA4N91ZCuxhdLtaAxgJ4Q5GSiEGdE1l4VBwXtFbiYJwFyNFEm2b6tspiV2wln53WNkdi4LQ2u42XwHEGYzfUF1eCAArl6g1M8otTiMgBI+vt9GYTCQG8B7BvJGVXS4g2S6SWvek3sM1AsLqjkYKz3BM8KoFHUqyOs8zUggPyhPCzsXaTWqjsNKjEPY37hVq3gpLGLrxtskB53nqrT+srktfFIShiRAK9nV8Sd8a0q1ECL85wE7psAhrHOH7Ya10zl5y6xE/D4wwW3ufTgeDwcxRo9F4P4EIm4MiJJGX3nH477AIRTKErtYSai3Jikh4tXqUhNBJOKsmJghByUtSFwZh9pRvTMSvQoR5mM12EqZz9C5LWziEfGsidolivkIkzNZmaxIQsQZSwLAIs9njZv0iIdWbsjIYKiG7z1asUqUrPMK0yhAawvTLEBrC9MsQ/luEs6rgZ0DSr5k+4R7LEBrC9EuTsHiylyrqEw6O91FHg00Ij/ZRU0P4LxF2kk7rVvpGnkbj15BgtPD+NOnkbq5TWN+hsaEmLGJZ7qGZHkMMq8bPIeNR7creIR7j9UXqpQ1YOLIof3y6VzrGa/m19iokUbmzfvlsb1TuK7bE4UWvT90z6f4oufKnZNMs6YYjnO6TTup20ttOE6vaFOwRnm4VmxvGF/RqR5UQBMuBGxeS7s4FbFfTDOE9R7XN1+OEI1i3ND4ri3UGS/a2WGiSIkE7Iy9TGfaKkO9XsweC+JeilDAPXjvS37uPWtAEbJTliOAkkipCYQj2VLmTE5ahibhjCHiigizqy7MQF0Tt37lIn2CtzEAOmM/jNaKaPwORQkF1d6UohsRM9VtbKROOgmuq8rD8ts+ZiH8dpq7KQgdxuscVBt4rQMnnEOKrNmk0p0Z4UYSyFAIi7rtu9vtdqRAeKlA6Uiyyy0uCkcfbiYyF9NdloVsnWtM98zZkR7PlekAHEe+JPN0rQyVDPWv8qIdIhpH2p/V2Q5Y6npxpAToiuwiP96MNXiWuQzcHQW7k8Xf6GWveQN3aeiKgd3e4pZLm4nhT8AewOtKhC8mAxtK905pVRqnwq5X3WUDM4FxnU03ZBwQfX1fulhWFllbcUi2xj0CibQ4i1hb79+yiQvyEMXexgLAYm5IirDdjUn6WEOFmNd4OOjt4wrIhNISGUEq4WdNzeyXmaWb1uKT/27PhEsaseAlHB0/Yih/wLlbABDJxzV61Eag3KsSpzTd3NTIyMjIyMjIyMjIyMjIyOlD9D/9IAmPEu0yZAAAAAElFTkSuQmCC" alt="Web Project" class="project-image">
+          <div class="project-info">
+            <h3>Web&nbsp;Project</h3>
+            <p>A full‑stack web application with modern front‑end components.</p>
+            <a href="https://github.com/SUSMITA-GOSH/WebProject" class="project-link" target="_blank">
+              View&nbsp;Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Experience ========== -->
+    <section id="experience">
+      <h2>My&nbsp;Experience</h2>
+      <div class="container">
+  <div class="card">
+    <h2>My Education</h2>
+
+    <div class="entry">
+      <h3>🎓 B.Sc. in Computer Science and Engineering</h3><p><strong> (2021–Present)</p>
+      <p>Focused on software development, algorithms, and full stack technologies.</p>
+    </div>
+
+    <div class="entry">
+      <h3>🎓 Higher Secondary Certificate (HSC)</h3>
+      <p><strong>Jalalabad Cantonment Public School and College</strong> — Science (2019–2021)</p>
+      <p>Graduated with strong academic performance and passion for ICT and programming.</p>
+    </div>
+
+    <div class="entry">
+      <h3>🎓 Secondary School Certificate (SSC)</h3>
+      <p><strong>Jalalabad Cantonment Public School and College</strong> — Science (2017–2019)</p>
+      <p>Built a strong foundation in science, math, and computer basics.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>My Experience</h2>
+
+    <div class="entry">
+      <h3>Front-End Developer (Freelance)</h3>
+      <p><strong>Remote | 2022–Present</strong></p>
+      <p>Worked with international clients to build responsive websites using React, HTML, CSS, and JavaScript. Delivered SEO-optimized and mobile-friendly interfaces.</p>
+    </div>
+
+    
+
+    <div class="entry">
+      <h3>Front-End Developer — Personal Projects</h3>
+      <p><strong>Remote | 2021–22</strong></p>
+      <p>Developed portfolio sites, blog platforms, and e-commerce UIs using React and Tailwind CSS. Collected feedback from real users.</p>
+    </div>
+  </div>
+    </section>
+  </div>
+  <div class="col-lg-6">
+    <h2 id="connect">Inbox&nbsp;me</h2>
+                  <form>
+                    <div class="row">
+                      <div class="col">
+                        <label for="name" class="form-name poppins-font">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your name">
+                      </div>
+                      <div class="col">
+                        <label for="email" class="form-name poppins-font">Your email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your email">
+                      </div>
+                    </div>
+                    <div>
+                      <label for="message" class="form-name poppins-font">Your Message</label>
+                      <textarea class="form-control" id="message" placeholder="Your Message"></textarea>
+                    </div><br>
+                    <button type="submit" class="btn btn-prim-2">Send Message </button>
+                  </form>
+                </div>
+<footer>
+        <a href="#">Privacy</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact us</a>
+        <a href="#">@2021</a>
+    </footer>
+  <!-- ---------- Scripts ---------- -->
+  <script>
+   
+    const buttons = document.querySelectorAll('.filter-button');
+    const cards   = document.querySelectorAll('.project-card');
+
+    buttons.forEach(btn => btn.addEventListener('click', () => {
+      
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        card.style.display =
+          filter === 'all' || card.dataset.type === filter ? 'block' : 'none';
+      });
+    }));
+  </script>
+</body>
+</html>
