@@ -156,6 +156,25 @@
       .hero-image img{width:220px;height:300px;}
       section[id] h2{font-size:28px;}
     }
+    @media screen and (max-width: 768px) {
+  .project-grid, .container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    min-width: 250px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+}
+
     /* Container column Experience*/
 
  .col-lg-6 {
