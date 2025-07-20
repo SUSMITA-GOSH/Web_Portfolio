@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -216,28 +216,36 @@
                   </form>
                 </div>
 <footer>
-        <a href="#">Privacy</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contact us</a>
-        <a href="#">@2021</a>
-    </footer>
-  <!-- ---------- Scripts ---------- -->
-  <script>
-   
-    const buttons = document.querySelectorAll('.filter-button');
-    const cards   = document.querySelectorAll('.project-card');
+<footer class="bg-dark text-center text-white py-4">
+  <div class="container">
+    <p class="mb-3 fw-bold">Contacts:</p>
 
-    buttons.forEach(btn => btn.addEventListener('click', () => {
-      
-      buttons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    <div class="d-flex justify-content-center gap-4 mb-3">
+      <!-- Phone -->
+      <a href="tel:+8801234567890" class="text-white fs-4">
+        <i class="fas fa-phone-alt"></i>
+      </a>
 
-      const filter = btn.dataset.filter;
-      cards.forEach(card => {
-        card.style.display =
-          filter === 'all' || card.dataset.type === filter ? 'block' : 'none';
-      });
-    }));
-  </script>
+      <!-- Email -->
+      <a href="mailto:susmita@example.com" class="text-white fs-4">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://facebook.com" class="text-white fs-4" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com" class="text-white fs-4" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+
+    <p class="mb-0" style="font-size: 0.9rem;">&copy; 2025 Susmita Gosh. All rights reserved.</p>
+    
+  </div>
+</footer>
+  
 </body>
 </html>
